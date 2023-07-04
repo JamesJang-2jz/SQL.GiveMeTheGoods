@@ -1,2 +1,5 @@
 SELECT * FROM Students
-WHERE City LIKE '[acs]%';
+    -> WHERE CITY LIKE 'a%' OR CITY LIKE 'c%' OR CITY LIKE 's%';
+
+SELECT * FROM Students
+    -> WHERE City REGEXP '^[acs]';
