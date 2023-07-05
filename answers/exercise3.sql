@@ -1,2 +1,5 @@
 SELECT * FROM Students
-WHERE City LIKE '[a-f]%';
+    -> WHERE City REGEXP '^[a-fA-F]';
+
+SELECT * FROM Students
+    -> WHERE City >= 'A' AND City < 'G';
