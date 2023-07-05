@@ -1,2 +1,5 @@
 SELECT * FROM Students
-WHERE City LIKE '[!acf]%';
+    -> WHERE City NOT LIKE 'a%' AND City NOT LIKE 'c%' AND City NOT LIKE 'f%';
+
+SELECT * FROM Students
+    -> WHERE City REGEXP '^[^acf]';
